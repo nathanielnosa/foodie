@@ -44,4 +44,10 @@ document.querySelectorAll('.food .card').forEach(food =>{
   };
 });
 
+previewContainer.querySelector('#close-preview').onclick = () =>{
+      previewContainer.style.display = 'none'
+       previewBox.forEach(close =>{
+        close.classList.remove('active');
+    });
+};
 
