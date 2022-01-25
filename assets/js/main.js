@@ -29,19 +29,20 @@ $('.slider').slick({
 });
 
 let previewContainer = document.querySelector('.food-preview-container');
-let previewBox = document.querySelector('.food-preview');
+let previewBox = previewContainer.querySelectorAll('.food-preview');
 
-document.querySelectorAll('.food .card').forEach(food =>{
-  food.onclick = () =>{
-    previewContainer.style.display = 'flex'
+document.querySelectorAll('#food .card').forEach(food =>{
+  food.onclick = (e) =>{
+    previewContainer.style.display = 'flex';
     let name = food.getAttribute('data-name');
+
     previewBox.forEach(preview =>{
       let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
+      if (name == target){
+        preview.classList.add('active')
       }
-    });
-  };
+    })
+  }
 });
 
 previewContainer.querySelector('#close-preview').onclick = () =>{
@@ -50,4 +51,5 @@ previewContainer.querySelector('#close-preview').onclick = () =>{
         close.classList.remove('active');
     });
 };
+
 
