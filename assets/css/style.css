@@ -517,4 +517,14 @@ nav .navbar-nav a:hover{
     margin-right: auto;
 }
 
+.food-preview-container .food-preview{
+  text-align:center;
+  background:var(--white);
+  padding:3rem 2rem;
+  border-radius: .5rem;
+  display:none;
+  margin-left:3rem;
+  width:35rem;
+}
+
 }
