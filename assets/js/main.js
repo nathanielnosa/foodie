@@ -53,3 +53,5 @@ previewContainer.querySelector('#close-preview').onclick = () =>{
 };
 
 
+lightGallery(document.querySelector('.gallery .row'));
+
